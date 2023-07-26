@@ -119,6 +119,22 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
+
+.navbar .menu li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: crimson;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.navbar .menu li a:hover::after{
+    transform: scaleX(1);
+}
+
 .navbar .menu li a:hover{
     color: crimson;
 }
@@ -196,6 +212,7 @@ section .title::after{
 .home .home-content .text-3 span{
     color: crimson;
     font-weight: 500;
+    display: initial;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
