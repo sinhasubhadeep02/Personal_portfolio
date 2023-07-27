@@ -231,8 +231,6 @@ section .title::after{
   -webkit-tap-highlight-color: transparent;
 }
 
-
-
 .wrapper {
   display: inline-flex;
 }
@@ -432,9 +430,6 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-
-
-
 .services .serv-content .card1{
     width: calc(33% - 20px);
     background: #222;
@@ -466,8 +461,6 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
-
 
 /* skills section styling */
 
