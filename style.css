@@ -215,6 +215,7 @@ section .title::after{
     color: crimson;
     font-weight: 500;
     display: initial;
+    font-style: initial;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -230,8 +231,6 @@ section .title::after{
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
 }
-
-
 
 .wrapper {
   display: inline-flex;
@@ -338,28 +337,10 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
-/* .about .about-content .right a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-
-.about .about-content .right a:hover{
-    color: crimson;
-    background: none;
-} */
 
 .about .about-content .right a {
     align-items: center;
     appearance: none;
-    /* background-image: radial-gradient(100% 100% at 100% 0, rgb(235, 156, 156) 0.5, #ff0303 80%); */
     background-image: radial-gradient(100% 100% at 100% 0, #ff0303 0, rgb(235, 156, 156) 100%);
     border: 0;
     border-radius: 6px;
@@ -367,7 +348,6 @@ section .title::after{
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    /* font-family: "JetBrains Mono",monospace; */
     height: 48px;
     justify-content: center;
     line-height: 1;
@@ -426,6 +406,7 @@ section .title::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: rgba(251, 251, 251, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px;
 }
 .services .serv-content .card:hover{
     background: crimson;
@@ -445,6 +426,38 @@ section .title::after{
     color: #fff;
 }
 .services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.services .serv-content .card1{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;box-shadow: rgba(236, 236, 238, 0.25) 0px 30px 60px -12px, rgba(255, 252, 252, 0.3) 0px 18px 36px -18px;
+}
+.services .serv-content .card1:hover{
+    background: crimson;
+}
+.services .serv-content .card1 .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card1:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card1 i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card1:hover i{
+    color: #fff;
+}
+.services .serv-content .card1 .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -1003,6 +1016,10 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .services .serv-content .card1{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -1024,6 +1041,9 @@ footer span a:hover{
         font-size: 20px;
     }
     .services .serv-content .card{
+        width: 100%;
+    }
+    .services .serv-content .card1{
         width: 100%;
     }
 }
