@@ -480,6 +480,69 @@ section .title::after{
     text-align: justify;
 }
 
+/* Popup container */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    animation: zoomIn 0.3s ease-out;
+}
+
+/* Popup content */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 800px;
+    height: 600px;
+    color: #000000;
+    /* Set a fixed height for the popup content */
+    max-height: 80%;
+    /* Enable vertical scrolling */
+    overflow-y: auto;
+    box-shadow: rgba(0, 0, 0, 0.423) 0px 12px 28px 0px, rgba(0, 0, 0, 0.423) 0px 2px 4px 0px, rgba(255, 255, 255, 0.423) 0px 0px 0px 1px inset;
+}
+
+.popup-content h2 {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Close button */
+.popup-close {
+    position: fixed;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* CSS Animation - Zoom-in */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .skills .skills-content .left a{
     align-items: center;
     appearance: none;
@@ -490,7 +553,7 @@ section .title::after{
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    height: 48px;
+    height: 46px;
     justify-content: center;
     line-height: 1;
     list-style: none;
@@ -846,7 +909,7 @@ section .title::after{
     .right form .button-area button,
     .right form .button-area button:after {
     width: 150px;
-    height: 50px;
+    height: 42px;
   }
 }
 
@@ -1045,6 +1108,19 @@ footer span a:hover{
     }
     .services .serv-content .card1{
         width: 100%;
+    }
+}
+
+/* Responsive Styles for popup */
+@media screen and (max-width: 600px) {
+    .popup-content {
+        width: 90%;
+    }
+}
+/* Responsive Styles for popup */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .popup-content {
+        width: 70%;
     }
 }
 
