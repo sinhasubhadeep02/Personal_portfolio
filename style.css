@@ -322,6 +322,7 @@ section .title::after{
     width: 400px;
     object-fit:  cover;
     border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .about .about-content .right{
     width: 55%;
@@ -647,7 +648,7 @@ section .title::after{
     width: 60%;
 }
 
-/* teams section styling */
+/* Project section styling */
 .teams .title::after{
     content: "Some Projects";
 }
